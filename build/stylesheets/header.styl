@@ -1,0 +1,60 @@
+html, body
+  margin 0
+  padding 0
+  box-sizing: border-box;
+  background-color: #1e2226
+body
+  position relative
+
+.container
+  header
+    h1
+      color #50c5e0
+      text-align: center;
+      margin 0
+      padding-top 50px
+      font-family: Comforta;
+      font-size: 20px
+    .h1-code
+      padding-top: 0
+      padding-bottom: 30px
+      font-family: MrRobot
+      font-weight: normal
+      font-size: 50px
+      line-height: 1
+    nav ul
+      padding 0 0 30px 0
+      margin-bottom: 0
+      text-align: center;
+    nav ul li
+      list-style:none
+      display: inline-block;
+      padding 0 15px 0 15px
+    nav ul li a
+      text-decoration: none
+      color #50c5e0
+      font-family: Comforta
+      font-weight: bold
+      font-size: 19px
+
+    nav
+      .big-nav
+        width 100%
+        margin 0 auto
+        display flex
+        &--item
+          font-family: Comforta
+          font-weight: lighter
+          font-size: 25px
+          width: 50%
+          border 1px solid #50c5e0
+          text-align: center;
+          padding 20px 0 20px 0
+          transition all .2s ease-in-out
+          color #50c5e0
+        &--main
+          border-right: none
+        &--hovered
+          background-color #50c5e0
+          color #22262a
+          cursor: pointer;

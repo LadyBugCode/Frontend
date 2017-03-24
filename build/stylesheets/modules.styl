@@ -1,0 +1,288 @@
+.lead-module
+  horizonatally-centered()
+  height 1247px
+  padding-top 15px
+  display flex
+  justify-content: space-between;
+  .column
+    &-left
+      width 685px
+      &--item
+        min-height 400px
+        width 100%
+        margin-bottom: 15px
+      &--pic
+        background-size: cover
+      &--pic1
+        background-image url("img/bilder.jpg")
+      &--pic2
+        background-image url("img/duck.jpg");
+        margin-bottom: 0 !important
+      &--teaser
+        border 1px solid #50c5e0
+        .teaser-title
+          title-style()
+          font-size: 25px
+        .teaser-border
+          teaser-border()
+        .teaser-content
+          width 90%
+          margin 0 auto
+          color #71869c
+          font-size: 17px
+          font-family: Comforta
+        .teaser-info
+          width 90%
+          height 20px
+          margin 0 auto
+          display flex
+          justify-content: space-between;
+          padding: 15px 0 15px 0
+          a
+            color #50c5e0
+            text-decoration: none;
+            font-size 15px
+            text-transform: uppercase;
+            font-family: Comforta
+            font-weight: lighter
+            transition all .2s ease-in-out
+          a:hover
+            color #71869c
+          a.read-more
+            color #71869c
+          a.read-more:hover
+            color #50c5e0
+      &-teaser:after
+        content: '';
+        position: absolute;
+        top: -15px;
+        left: 65px;
+        bottom: 0px;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 10px 15px 10px;
+        border-color: transparent transparent rgba(80,197,224,0.8) transparent;
+    &-right
+      width 300px
+      overflow-y: scroll;
+      margin-bottom: 15px
+      &--small-item
+        .small-pic
+          height 100px
+          background-size cover
+          margin-bottom: 15px
+        .small-pic1
+          background-image: url('img/eyes.jpg');
+        .small-pic2
+          background-image: url('img/duck.jpg');
+        .small-title
+          margin-bottom: 15px
+          hovered-text()
+      &--big-item
+        .big-pic
+          height 150px
+          background-size: cover
+          margin-bottom: 15px
+        .big-pic1
+          background-image: url(img/man.jpg);
+        .big-title
+          margin-bottom: 15px
+          hovered-text()
+      &--teaser2
+        border 1px solid #50c5e0
+        margin-bottom: 15px
+        .teaser2-title
+          title-style()
+          font-size: 16px
+        .teaser2-border
+          teaser-border()
+        .teaser2-content
+          width 90%
+          margin 0 auto
+          color #71869c
+          font-size: 16px
+          font-family: Comforta
+          font-weight: lighter
+        .teaser2-info
+          width 90%
+          height 20px
+          margin 0 auto
+          display flex
+          justify-content: space-between;
+          padding: 15px 0 15px 0
+          a
+            color #50c5e0
+            text-decoration: none;
+            font-size 10px
+            text-transform: uppercase;
+            font-family: Comforta
+            font-weight: lighter
+            transition all .2s ease-in-out
+          a:hover
+            color #71869c
+          a.read-more
+            color #71869c
+          a.read-more:hover
+            color #50c5e0
+
+
+.wide-screen-picture
+  width 1000px
+  height 200px
+  margin 0 auto
+  background-size cover
+  background-image: url(img/wide-pic.jpg);
+
+
+.component-module
+  width 1000px
+  margin 15px auto
+  display flex
+  justify-content space-between
+  .column-quote
+    width 400px
+    display flex
+    justify-content center
+    a
+      color #71869c
+      line-height: 2
+      text-decoration: none;
+      font-size 20px
+      font-family: Bad
+      font-weight: normal
+      transition all .2s ease-in-out
+  .column-teaser
+    width 585px
+    border 1px solid #50c5e0
+    &--title
+      title-style()
+    &--border
+      teaser-border()
+    &--content
+      width 90%
+      margin 0 auto
+      color #71869c
+      font-size: 17px
+      font-family: Comforta
+    &--info
+      width 90%
+      height 20px
+      border 1px solid reds
+      margin 0 auto
+      display flex
+      justify-content: space-between;
+      padding: 15px 0 15px 0
+      a
+        color #50c5e0
+        text-decoration: none;
+        font-size 13px
+        text-transform: uppercase;
+        font-family: Comforta
+        font-weight: lighter
+        transition all .2s ease-in-out
+      a:hover
+        color #71869c
+      a.read-more
+        color #71869c
+      a.read-more:hover
+        color #50c5e0
+
+
+.optional-module
+  width 1000px
+  margin 0 auto
+  display flex
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px
+  .column-article
+    width 350px
+    border 1px solid #50c5e0
+    &--title
+      color #50c5e0
+      font-family: Comforta
+      font-weight: lighter
+      font-size: 16px
+      text-align: center;
+      text-transform: uppercase;
+      width 90%
+      margin 0 auto
+      padding 15px 0 15px 0
+    &--border
+      height 1px
+      width 90%
+      margin 0 auto 15px auto
+      background-color: c
+    &--content
+      width 90%
+      margin 0 auto
+      color #71869c
+      font-size: 16px
+      font-family: Comforta
+    &--info
+      width 90%
+      height 20px
+      border 1px solid reds
+      margin 0 auto
+      display flex
+      justify-content: space-between;
+      padding: 15px 0 15px 0
+      a
+        color #50c5e0
+        text-decoration: none;
+        font-size 14px
+        text-transform: uppercase;
+        font-family: Comforta
+        font-weight: lighter
+        transition all .2s ease-in-out
+      a:hover
+        color #71869c
+      a.read-more
+        color #71869c
+      a.read-more:hover
+        color #50c5e0
+
+  .column-pic
+    width 635px
+    height 450px
+    background-image: url(img/duck.jpg);
+    background-size: cover;
+
+
+.button-load
+  width 1000px
+  margin 0 auto
+  padding 50px 0 50px 0
+  a
+    margin 0 auto
+    text-align: center;
+    display block
+    width 150px
+    height 50px
+    line-height: 50px
+    text-decoration:none;
+    color #50c5e0
+    border: 1px solid #50c5e0
+    font-family: Comforta
+    font-size: 18px
+    transition all .2s ease-in-out
+  a:hover
+    background-color: #50c5e0;
+    color #1e2226;
+
+
+footer
+  width 1000px
+  margin 0 auto
+  padding-bottom: 15px
+  .column-copywright
+    display flex
+    justify-content: center;
+    a
+      color #50c5e0;
+      font-size: 10px
+      text-align: center;
+      text-decoration none
+      font-family Comforta

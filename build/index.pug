@@ -1,0 +1,52 @@
+doctype html
+html
+  include ./templates/head.pug
+  body
+    .container 
+      header
+        h1 LadyBug
+        h1.h1-code CODE
+        
+        nav
+          ul
+            li 
+              a(href="#") ИСТОРИЯ
+            li 
+              a(href="#") БОССЫ
+            li
+              a(href="#") АНОНСЫ
+            li 
+              a(href="#") ИНТЕРВЬЮ
+            li 
+              a(href="#") О НАС
+            li 
+              a(href="№") РЕКЛАМА
+        
+        nav
+          .big-nav
+            .big-nav--item.big-nav--main О ГЛАВНОМ
+            .big-nav--item НОВОСТИ 
+             
+      section
+        include templates/_lead-module.pug
+       
+      section
+        a(href="#" id="test")
+          .wide-screen-picture 
+        
+      section
+        include templates/_component-module.pug 
+        
+      section
+        include templates/_optional-module.pug  
+        
+      .button-load
+        a(href="#") Еще
+        
+      footer
+        .column-copywright
+            a(href="#") &#x24B8; Все права защищены Карма-Крюгером, который имеет обыкновение крутить ваши сны на карусели - если вы являете собой полное атсутствие собственного креатива и хотите у нас что-то стащить без нашего ведома. Вообще, мы любим дарить, если нас просто &nbsp п о п р о с и т ь
+        .column-network  
+                     
+  script(src="jquery-3.0.0.min.js")
+  script(src="page.js")
